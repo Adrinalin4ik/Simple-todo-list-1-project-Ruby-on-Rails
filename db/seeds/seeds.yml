@@ -1,0 +1,23 @@
+projects:
+ - title: 'Семья'
+   todos:
+    - text: 'Купить молоко'
+      isCompleted: false
+    - text: 'Заменить масло в двигателе'
+      isCompleted: false
+    - text: 'Отправить письмо бабушке'
+      isCompleted: true
+ - title: 'Работа'
+   todos:
+    - text: 'Позвонить заказчику'
+      isCompleted: true
+    - text: 'Отправить документы'
+      isCompleted: true
+    - text: 'Заполнить отчет'
+      isCompleted: false
+ - title: 'Прочее'
+   todos:
+    - text: 'Позвонить другу'
+      isCompleted: false
+    - text: 'Подготовиться к поездке'
+      isCompleted: false

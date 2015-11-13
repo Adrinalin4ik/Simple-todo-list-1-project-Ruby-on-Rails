@@ -1,0 +1,42 @@
+
+<div class="add_todo_content">
+<div class="add_white_block">
+<h3>Новая задача</h3>
+
+<%= form_for :project, method: :post, :html => { :id => "todo_create_form" } do |f| %>
+<div class="new_todo_fields">
+
+<p>  <select class="select_category" id="select_category" >
+    <%@projects.each do|f|%>
+    <option><%=f.title%></option>
+  <%end%>
+  <option>Создать новый список</option>
+  </select>
+</p>
+
+<p>
+  <input id="project_title" class="project_title" type="text" name="project[title]" placeholder="Заголовок" value="Название списка"></input>
+</p>
+
+  <p>
+
+    <input id="project_text" type="text" name="project[text]" placeholder ="Название задачи" value="Название задачи"></input>
+  </p>
+
+
+</div>
+
+<a href="#" class="hide_new_todo" id="hide_new_todo">
+  <div class="hide_btn">
+  Отмена
+</div></a>
+
+<a id="submit_add_todo" class="add_todo_btn" href="#" onclick="$('#todo_create_form').submit();">
+   <div class="add_todo">
+      OK
+   </div></a>
+
+
+<% end %>
+</div>
+</div>

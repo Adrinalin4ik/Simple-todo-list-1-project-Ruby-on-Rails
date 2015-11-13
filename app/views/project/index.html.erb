@@ -1,0 +1,52 @@
+
+<div id="create_div">
+    <%= render 'create' %>
+</div>
+<div id="shadow_overlay"></div>
+<div id= "main_content_container" class = "main_content_container">
+
+<div class = "header">
+
+  <div class = "elements">
+
+      <h1 class ="title">Задачи</h1>
+
+      <a id="add_new_todo" href="#">
+        <img src="/images/addTodoIcon.png" alt="+">
+      </a>
+
+    </div>
+</div>
+
+  <div class="container">
+    <% @projects.each do |project| %>
+
+       <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="shadow_todos">
+            <h2><%= project.title %></h2>
+            <hr>
+
+
+                <% project.todos.find_each do |t| %>
+                  <%= form_for t, method: :post, :html => { :id => "todo_form" } do |f| %>
+                    <ul id="todo_line"><table><th>
+                    <td id ="todo_check">
+                      <%= check_box_tag t.id, t.isCompleted %>
+
+                       <%= submit_tag(t.id, class: "submit_flag", id: t.id) %>
+                    <td id="todo_text">
+                       <%= label_tag(t.id,t.text, id: t.id) %></td>
+
+                   </th></table></ul>
+
+               <% end %>
+
+              <% end %>
+
+         </div>
+       </div>
+
+     <% end %>
+ </div>
+
+</div>
