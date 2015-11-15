@@ -1,28 +1,4 @@
-== README
+== Simple todo list project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Серия проектов simple todo list интересна тем что все приложения интегрированы между собой. Главный проект (http://task5todo.herokuapp.com/)  написан на Ruby on rails, имеет  скромный API отвечающий на пост запросы получения информации о todo и на добавление нового todo. Все остальные приложения из  этой серии  ( https://github.com/Adrinalin4ik/Simple-todo-list--2-project--on-swift и https://github.com/Adrinalin4ik/Simple-todo-list--3-project--on-java ) умеют им пользоваться.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
